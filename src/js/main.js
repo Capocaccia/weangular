@@ -13,5 +13,5 @@ angular
           vm.temp_f = data.current_observation.temp_f;
         });
 
-    })
+    });
   });
