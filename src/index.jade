@@ -8,9 +8,7 @@ html(lang="en-US", ng-app="weangular")
     link(rel="stylesheet" href="css/main.css")
   body
     .container
-      .app(ng-controller="WeatherController as weather")
-        .temp(ng-hide="weather.temp_f") Looking up weather...
-        .temp(ng-show="weather.temp_f") {{weather.temp_f}} ºF
+      .app(ng-view)
 
     script(src="lib/build.js")
     script(src="js/main.js")

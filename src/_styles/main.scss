@@ -1,5 +1,17 @@
+.app {
+  text-align: center;
+}
+
 .temp {
   font-size: 144px;
+  font-family: 'Georgia';
+}
+
+form {
+  margin: 50px;
+}
+
+input {
+  width: 250px;
   text-align: center;
-  font-family: 'Georgia'
 }
