@@ -1,0 +1,21 @@
+{
+  "name": "weangular",
+  "version": "1.0.0",
+  "homepage": "https://github.com/NSS-Cohort-9/weangular",
+  "authors": [
+    "Scott Humphries <scott@sscotth.io>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.4.0"
+  }
+}
