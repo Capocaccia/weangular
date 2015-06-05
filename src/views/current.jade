@@ -1,0 +1,6 @@
+form
+  input(ng-model="weather.zip", type="number", pattern="[0-9]*", maxlength="5", min="01000")
+  button(ng-click="weather.zipLookup()") Zip Code Lookup
+
+.temp(ng-hide="weather.temp_f") Looking up weather...
+.temp(ng-show="weather.temp_f") {{weather.temp_f}} ºF
