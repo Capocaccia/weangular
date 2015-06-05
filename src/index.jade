@@ -1,15 +1,16 @@
 doctype html
-html(lang="en-US")
+html(lang="en-US", ng-app="weangular")
   head
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title Weangular
-    link(rel="stylesheet" href="lib/build.css")
     link(rel="stylesheet" href="css/main.css")
   body
     .container
-      h1 Hello World
+      .app(ng-controller="WeatherController as weather")
+        .temp(ng-hide="weather.temp_f") Looking up weather...
+        .temp(ng-show="weather.temp_f") {{weather.temp_f}} ºF
 
     script(src="lib/build.js")
     script(src="js/main.js")
